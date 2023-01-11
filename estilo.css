@@ -21,9 +21,14 @@ body, html {
 
 /*Efeito Parallax*/
 
-.imagem1, .imagem2 {
-    border: 1px solid red;
+.imagem1, .imagem2, .imagem3, .imagem4 {
+    position: relative;
     height: 100%;
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .imagem1 {
@@ -32,4 +37,30 @@ body, html {
 
 .imagem2 {
     background-image: url(imagens/imagem2.jpg);
+}
+
+.imagem3 {
+    background-image: url(imagens/imagem3.jpg);
+}
+
+.imagem4 {
+    background-image: url(imagens/imagem4.jpg);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.conteudo-titulo span.titulo {
+    color: #FFF;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
